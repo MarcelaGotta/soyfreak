@@ -18,7 +18,7 @@
 
         @endif
         <span class="pull-right dropdown">
-            <a class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown" href=""><i class="icon ion-chevron-down"></i></a>
+            <a class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown" href=""><i class="icon ion-ios-gear"></i></a>
             <ul class="dropdown-menu">
                 @if(!$community->isOwner() and $community->present()->isMember())
                     <li><a href="{{URL::route('leave-community', ['id' => $community->id])}}">{{trans('community.leave')}}</a> </li>

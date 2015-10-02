@@ -150,7 +150,12 @@
     <div class="post-footer">
         <ul class="nav nav-left">
             @if($post->content_type != 'auto-post')
-            <li><a href="" data-is-login="{{Auth::check()}}" class="post-share-button" data-id="{{$post->id}}"><i class="icon ion-share"></i> <span></span></a></li>
+            <li>
+                <a href="#" class="button-share">
+                    <i class="icon ion-android-share-alt"></i> 
+                    <span></span>
+                </a>
+            </li>
             @endif
             <li>
                 <?php $hasLike = $post->hasLiked()?>
@@ -179,6 +184,18 @@
                 </a>
             </li>
             @endif
+            <li class="share-box">
+                <i class="icon ion-arrow-up-b flecha-azul"></i>
+                <ul>
+                    <li>
+                         <a href="" title="{{trans('post.share')}}"data-is-login="{{Auth::check()}}" class="post-share-button" data-id="{{$post->id}}">
+                            <i class="icon ion-share"></i> 
+                            
+                        </a>
+                    </li>
+                    {{Theme::section('post.social-share', ['post' => $post])}}
+                </ul>
+            </li>
         </ul>
 
         <ul class="nav nav-right pull-right">
