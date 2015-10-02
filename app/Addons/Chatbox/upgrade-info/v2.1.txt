@@ -1,0 +1,11 @@
+--------------CHANGES MADE --------------------------
+
+--------------FILES TO UPDATE---------------------
+
+app/Addons/Chatbox/config.php
+
+app/Addons/Chatbox/Controllers/ChatboxController.php
+
+app/Addons/Chatbox/assets/js/chatbox.js
+
+app/Addons/Chatbox/addassets.php

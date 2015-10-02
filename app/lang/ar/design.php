@@ -1,0 +1,25 @@
+<?php
+return [
+  'enable-design-note' => 'ضع علامة في المربع أعلاه إذا كنت ترغب في استخدام مواصفات التصميم الخاص بك',
+    'choose-from-theme' => 'اختر من بين الموضوعات',
+    'customize-yours' => 'تخصيص لك',
+    'enable-design' => 'تمكين تصميم',
+    'enable-my-design' => 'تمكين مواصفات التصميم أدناه',
+    'background-image' => 'صورة الخلفية',
+    'choose-image' => 'اختيار صورة',
+    'choose-image-note' => 'Note: على تغيير صورة الخلفية ، يتم حذف القديم تلقائيا',
+    'background-color' => 'لون الخلفية',
+    'background-position' => 'موقف الخلفية',
+    'background-position-note' => 'Example : مركز أعلى، 60px 20px، أعلى ',
+    'background-attachment' => 'مرفق خلفية',
+    'fixed' => 'ثابت',
+    'scroll' => 'التمرير',
+    'background-repeat' => 'خلفية تكرار',
+    'no-repeat' => 'عدم تكرار',
+    'repeat-x' => 'كرر-X',
+    'repeat-y' => 'كرر-Y',
+    'repeat' => 'كرر',
+    'link-color' => 'اللون صلة',
+    'page-content' => 'المحتوى الصفحة',
+    'save-design' => 'حفظ التصميم'
+];

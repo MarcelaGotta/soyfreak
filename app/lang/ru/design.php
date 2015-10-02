@@ -1,0 +1,25 @@
+<?php
+return [
+  'enable-design-note' => 'Установите флажок выше, если вы хотите использовать спецификации проекта',
+    'choose-from-theme' => 'Выберите из тем',
+    'customize-yours' => 'Настройка твой',
+    'enable-design' => 'Включить дизайн',
+    'enable-my-design' => 'Включить проектных спецификаций ниже',
+    'background-image' => 'фон изображения',
+    'choose-image' => 'Выберите изображение',
+    'choose-image-note' => 'Note: об изменении фонового изображения , ваш старый удаляется автоматически',
+    'background-color' => 'цвет фона',
+    'background-position' => 'положение фона',
+    'background-position-note' => 'Example : вверху по центру, 60px 20px, верхний ',
+    'background-attachment' => 'крепление Фон',
+    'fixed' => 'фиксированный',
+    'scroll' => 'свиток',
+    'background-repeat' => 'Фон повторите',
+    'no-repeat' => 'Нет повторите',
+    'repeat-x' => 'Повторите - х',
+    'repeat-y' => 'Повторите -Y',
+    'repeat' => 'повторение',
+    'link-color' => 'цвет ссылки',
+    'page-content' => 'содержимое страницы',
+    'save-design' => 'Сохранить дизайн'
+];

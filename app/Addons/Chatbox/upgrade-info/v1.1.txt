@@ -1,0 +1,12 @@
+----------Changes Done---------------------------
+Rename the chatbox to Chatbox only the c changed to capital letter
+Fixed the boxes overlay photo preview
+
+---------Rename FOlders-----------
+-app/addons/chatbox --to-- app/Addons/Chatbox
+-app/addons/chatbox/controllers --to-- app/Addons/Chatbox/Controllers
+
+--------FILES TO UPDATE-----------------
+app/Addons/Chatbox/Controllers/ChatboxController.php
+app/Addons/Chatbox/assets/css/style.css
+app/Addons/Chatbox/assets/js/script.js

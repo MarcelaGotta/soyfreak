@@ -1,0 +1,12 @@
+--------------CHANGES MADE --------------------------
+-Improve the chat speed
+-Fixed minor bugs
+--------------FILES TO UPDATE---------------------
+
+app/Addons/Chatbox/config.php
+
+app/Addons/Chatbox/Controllers/ChatboxController.php
+
+app/Addons/Chatbox/assets/js/chatbox.js
+
+app/Addons/Chatbox/addassets.php

@@ -1,0 +1,7 @@
+---CHANGES MADE----
+
+--Fix issue with addassets.php file causing issue when activated
+
+--FILES TO UPDATE---
+
+-app/Addons/Chatbox/addassets.php

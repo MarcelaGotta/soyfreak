@@ -1,0 +1,7 @@
+--------------CHANGES MADE----------------
+
+-Added ability to reject and approve verify requests to other admins
+
+--------------FILES TO UPDATE--------------
+
+app/Addons/Verifybade/Classes/VerifyBadgeRepository.php

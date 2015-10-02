@@ -1,0 +1,43 @@
+<?php
+return [
+    'pages' => 'Enciclopedia',
+    'my-pages' => 'Mis Aportes',
+    'create-page' => 'Crear Aporte',
+    'change-photo-fail' => 'Error guardando foto',
+    'filter-category' => 'Filtrar por categoria',
+    'create-a-page' => 'Crear un Aporte',
+    'no-page' => 'No hay aportes en este momento',
+    'name' => 'Nombre del aporte',
+    'website' => 'web',
+    'short-description' => 'Descripcion corta',
+    'type-of-page' => 'Tipo de Aporte',
+    'you-may-like' => 'Te puede gustar',
+    'change-cover' => 'Cambiar portada',
+    'delete-page' => 'Borrar Aporte',
+    'report-page' => 'Reportar Aporte',
+    'edit-page' => 'Editar Aporte',
+    'change-icon' => 'Cambiar Icono',
+    'design-page' => 'Personalizar Aporte',
+    'page-add-error' => "Error creando aporte : Puede que ya exista o detalles invalidos",
+    "success" => "Guardado exitosamente",
+    'save-error' => "Error guardando cambios",
+
+    //Version 2.0
+    'url' => 'Page Url',
+    'moderator-roles' => 'Este usuario puede responder y borrar comentarios en el aporte',
+    'editor-roles' => 'Este usuario puede editar el aporte, responder a nombre del aporte y moderar publicaciones y comentarios',
+    'admin-roles' => 'Este usuario puede administrar todos los aspecto del aporte incluyendo la edicion de la informacion, publicar a nombre de la aporte y moderar las publicaciones y comentarios',
+    'make-you-admin' => 'te agrego como administrador de ',
+    'make-you-editor' => 'te agrego como editor de ',
+    'make-you-moderator' => 'te agrego como moderador de ',
+    'page-roles' => 'Administrar roles del aporte',
+    'admin' => 'Admin',
+    'editor' => 'Editor',
+    'moderator' => 'Moderador',
+    'add-new-admin' => 'Agregar Nuevo Admin',
+    'add-admin-input' => 'Escribe el nombre de tus amigos o personas que les gusta este aporte',
+    'save-admin' => 'Guardar Admin',
+    'role' => 'Rol',
+    'invite-friends-placeholder' => 'Invita a tus amigos a que le den me gusta'
+
+];

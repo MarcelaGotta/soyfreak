@@ -1,0 +1,24 @@
+--------------
+THIS VERSION REQUIRED LATEST VERSION OF CREA8SOCIAL 3.0
+---------------------------------------
+
+-Fix bug with multiple messages----
+-Change chatbox styles
+-Change chatbox input to textarea to allow multiple lines of text
+-Added comet technology
+-Improved online status
+-Title changess upon new messages
+-Auto open chatbo upon new messages
+
+------------------------------------------
+FILES TO UPDATE
+
+app/Addons/Chatbox/assets/js/chatbox.js
+app/Addons/Chatbox/assets/css/chatbox.css
+
+app/Addons/Chatbox/addassets.php
+app/Addons/Chatbox/Controllers/ChatboxController.php
+
+app/Addons/Chatbox/routes.php
+
+app/Addons/Chatbox/config.php

@@ -1,0 +1,25 @@
+<?php
+return [
+  'enable-design-note' => '檢查，如果你想用你的設計規範上方的方框',
+    'choose-from-theme' => '選擇主題',
+    'customize-yours' => '定制你的',
+    'enable-design' => '啟用設計',
+    'enable-my-design' => '啟用下面設計規範',
+    'background-image' => '背景圖片',
+    'choose-image' => '選擇圖片',
+    'choose-image-note' => '注：背景圖像變化，你的舊被自動刪除',
+    'background-color' => '背景顏色',
+    'background-position' => '背景位置',
+    'background-position-note' => '例如：頂部中心，60PX20像素，頂',
+    'background-attachment' => '背景附件',
+    'fixed' => '固定',
+    'scroll' => '滾動',
+    'background-repeat' => '背景重複',
+    'no-repeat' => '不重複',
+    'repeat-x' => '重複-X',
+    'repeat-y' => '重複-Ÿ',
+    'repeat' => '重複',
+    'link-color' => '鏈接顏色',
+    'page-content' => '頁面內容',
+    'save-design' => '保存的設計'
+];

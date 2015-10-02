@@ -1,0 +1,36 @@
+.side-actvitiy-container{
+    padding-bottom: 20px;
+}
+
+.side-activity-list {
+    height: 250px;
+    overflow: auto;
+
+}
+.side-activity-list .media, .main-activities-stream .media{
+
+}
+
+.side-activity-list .media img, .main-activities-stream .media img{
+    width: 40px;
+    height: 40px;
+}
+.side-activity-list .media h5,
+.main-activities-stream h5
+{
+    font-size: 12px;
+}
+.side-activity-list a,
+.main-activities-stream a
+{
+    display: block;
+    font-size: 11px;
+    color: #2B2B2B;
+    padding: 5px;
+    border-bottom: solid 1px #E7E7E7;
+}
+.side-activity-list a:hover,
+.main-activities-stream a:hover
+{
+    background: #F1F1F1;
+}

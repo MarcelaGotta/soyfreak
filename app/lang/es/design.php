@@ -1,0 +1,25 @@
+<?php
+return [
+  'enable-design-note' => 'Marcar la casilla si deseas usar tus especificaciones de personalizacion',
+    'choose-from-theme' => 'Escoger desde temas',
+    'customize-yours' => 'Personalizar',
+    'enable-design' => 'Activar personalizacion',
+    'enable-my-design' => 'Activar especificaciones de personalizacion a continuacion',
+    'background-image' => 'Imagen de fondo',
+    'choose-image' => 'Escoger imagen',
+    'choose-image-note' => 'Nota: cambiando la imagen de fondo se borrara la que tenias antes automaticamente',
+    'background-color' => 'Color de fondo',
+    'background-position' => 'Posicion del fondo',
+    'background-position-note' => 'Ejemplo : top center, 60px 20px, top etc',
+    'background-attachment' => 'Fondo adjunto',
+    'fixed' => 'Fixed',
+    'scroll' => 'Scroll',
+    'background-repeat' => 'Repetir fondo',
+    'no-repeat' => 'No repetir',
+    'repeat-x' => 'Repetir-x',
+    'repeat-y' => 'Repetir-y',
+    'repeat' => 'Repetir',
+    'link-color' => 'Color de enlaces',
+    'page-content' => 'Contenido de la pagina',
+    'save-design' => 'Guardar'
+];

@@ -1,0 +1,27 @@
+<?php
+return [
+    'activities' => 'Activities',
+    'update-status' => 'Updated :gen status',
+    'her' => 'her',
+    'his' => 'his',
+    'created-a-community' => ':user created a new community ":name"',
+    'created-a-game' => ':user added a new game ":name"',
+    'created-a-page' => ':user created a page ":name"',
+    'created-a-album' => ':user created a new photo album ":name"',
+    'added-photos' => ':user added :count photos',
+    'like-his-photo' => ':user liked his  photo',
+    'like-some-photo' => ':user Liked :name photo',
+    'liked' => ':user liked :name',
+    'like-his-post' => ':user liked is his  status',
+    'like-some-post' => ':user liked :name status',
+    'comment-his-photo' => ':user commented on his photo',
+    'comment-some-photo' => ':user commented on :name photo',
+    'commented' => ':user commented on :name',
+    'comment-his-post' => ':user commented on his status',
+    'comment-some-post' => ':user commented on :name status',
+    'view-all' => 'View all',
+    'all' => 'All',
+    'mine' => 'Mine',
+    'friends' => 'Friends',
+    'no-activity' => 'There are no activities yet'
+];

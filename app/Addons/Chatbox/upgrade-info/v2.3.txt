@@ -1,0 +1,17 @@
+----------CHANGES MADE--------------------
+
+-Added auto re-open of chat boxes when the page is reloaded
+-Added timestamp on chat boxes
+------------------------------------------
+
+---------FILES TO UPDATE------------------
+
+-app/Addons/Chatbox/routes.php
+-app/Addons/Chatbox/addassets.php
+
+-app/Addons/Chatbox/Controllers/ChatboxController.php
+
+-app/Addons/Chatbox/assets/js/chatbox.js
+-app/Addons/Chatbox/assets/css/chatbox.css
+
+-app/Addons/Chatbox/views/format-message.blade.php
