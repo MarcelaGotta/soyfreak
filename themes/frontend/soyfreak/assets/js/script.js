@@ -1222,6 +1222,10 @@ $(function() {
             $('.editor-footer').show('fast');
         }
     });
+    $(document).on('click', '.post-footer a.ion-heart', function(){
+        $(this).addClass('rpeuba');
+        $(this).toggleClass('ion-heart ion-heart-broken');
+    });
 
     window.mentionSuggestionIsOn = false;
     $(document).on('keyup', '.mention', function(e) {
@@ -1904,8 +1908,8 @@ $(function() {
     /**processing likes***/
     $(document).on('click', '.like-button', function() {
         var o = $(this);
-        var like = o.data('like');
-        var unlike = o.data('unlike');
+        var like = '<i class="icon ion-heart"></i>';
+        var unlike = '<i class="icon ion-heart-broken"></i>';
         var status = o.data('status');
         var span = o.find('span');
         var type = o.data('type')
@@ -1926,6 +1930,7 @@ $(function() {
         if (status == 0) {
             //like the post
             span.html(unlike);
+            o.attr("title", "Ya no me gusta");
             o.data('status', 1);
             $.ajax({
                 url : baseUrl + 'like/'+type +'/'+id,
@@ -1938,6 +1943,7 @@ $(function() {
         } else {
             //unlike the post
             span.html(like);
+            o.attr("title", "Me gusta");
             o.data('status', 0);
             $.ajax({
                 url : baseUrl + 'unlike/'+type +'/'+id,
@@ -2208,15 +2214,16 @@ $(function() {
         var status = $(this).data('status');
 
         if (status == 1) {
-            o.find('span').html(o.data('on'));
+            o.find('span').html('<i class="icon ion-ios-bell-outline"></i>');
+            o.attr('title', 'Activar Notificaciones');
             o.data('status', 0);
             $.ajax({
                 url : baseUrl + 'notification/receiver/remove/' + userid + '/' + type + '/' + typeId
             });
         } else {
-            o.find('span').html(o.data('off'));
+            o.find('span').html('<i class="icon ion-ios-bell"></i>');
             o.data('status', 1);
-
+            o.attr('title', 'Desactivar Notificaciones');
             $.ajax({
                 url : baseUrl + 'notification/receiver/add/' + userid + '/' + type + '/' + typeId
             });
