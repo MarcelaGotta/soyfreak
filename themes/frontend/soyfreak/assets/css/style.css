@@ -3117,6 +3117,16 @@ textarea{
     left: 24px;
     font-size: 17px;
 }
+.notificacion-header {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 25px;
+}
+.notificacion-header .icon {
+    font-size: 25px;
+    color: lightgrey;
+}
 /**Footer style***/
 #footer{
     /**background: lightgrey;**/

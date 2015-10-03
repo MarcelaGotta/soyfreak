@@ -1,7 +1,43 @@
 <div class="container page-content clearfix">
-    <div id="profile-header" class="profile-header" style="{{(!empty($profileUser->cover)) ? 'background-image: url('.$profileUser->present()->coverImage().')' : null}}" >
-        <div id="profile-cover" class="" style="{{(!empty($profileUser->cover)) ? 'background-image: url('.$profileUser->present()->coverImage().')' : null}}" ></div>
-        <input type="hidden" id="cropped-cover-image">
+    <div id="profile-header" class="profile-header" style="background: none" >
+        <div class="profile-cover-indicator">
+            <div>
+                <img src="{{Theme::asset()->img('theme/images/loading.gif')}}"/>
+                <span class="upload-status">0%</span>
+            </div>
+        </div>
+        <div class="profile-resize-cover">
+            <img src="{{$profileUser->present()->getCover()}}"/>
+        </div>
+        <div class="original-profile-cover">
+            <img src="{{$profileUser->present()->getOriginalCover()}}"/>
+            <input type="hidden" name="" id="profile-cover-resized-top">
+        </div>
+        <div class="profile-cover-reposition-button">
+            <button onclick="return cancelReposition()" class="btn btn-sm btn-default">{{trans('global.cancel')}}</button>
+            <button onclick="return saveProfileCover('profile/crop/cover')" class="btn btn-sm btn-success">{{trans('global.save')}}</button>
+
+        </div>
+        <div class="profile-cover-changer">
+            <div class="dropdown">
+
+                @if(Auth::check() and $profileUser->id == Auth::user()->id)
+                    <button class="btn btn-info btn-sm dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        <i class="ion ion-android-image"></i> {{trans('user.change-cover')}}
+                    </button>
+                @endif
+                <form id="profile-cover-form" action="" method="post" enctype="multipart/form-data">
+                    <span class="file-input"><input class="user-profile-cover-chooser" id="profile-cover-chooser" type="file" name="image"/></span>
+                </form>
+                <ul class="dropdown-menu pull-right" aria-labelledby="dropdownMenu1">
+                    <li>
+
+                        <a onclick="return file_chooser('#profile-cover-chooser')" href="#">{{trans('user.upload-a-photo')}} </a></li>
+                    <li><a onclick="return reposition_cover()" href="#">{{trans('user.reposition')}}</a></li>
+                    <li><a onclick="return remove_user_cover('{{Theme::asset()->img('theme/images/profile-cover.jpg')}}', '{{trans('global.confirm-delete')}}')" href="#">{{trans('global.remove')}}</a></li>
+                </ul>
+            </div>
+        </div>
         <div class="container">
             <div class="profile-info">
                 <div class="avatar">
@@ -48,14 +84,10 @@
                         <a href="" data-userid="{{$profileUser->id}}" data-label="{{trans('message.send-message')}}" class="btn btn-success btn-xs send-message-button">{{trans('message.send-message')}}</a>
                     @endif
                     {{Theme::section('connection.buttons', ['user' => $profileUser])}}
-                    @if(Auth::check() and $profileUser->id == Auth::user()->id)
-                            <span class="change-profile-cover">
-                                <a title="Change profile cover" class="btn btn-default btn-xs" id="change-profile-cover-button" href="javascript:void(0)"><i class="ion ion-android-image"></i> {{trans('user.change-cover')}}</a>
-                            </span>
-                    @endif
+
                         @if(Auth::check())
                             <span class="dropdown">
-                            <a data-toggle="dropdown" href="" class="btn btn-xs btn-success dropdown-toggle"><i class="icon ion-arrow-down-b"></i></a>
+                            <a data-toggle="dropdown" href="" class="btn btn-sm btn-success dropdown-toggle"><i class="icon ion-arrow-down-b"></i></a>
                             <ul class="dropdown-menu pull-right">
 
                                 @if (Auth::check() and Auth::user()->id != $profileUser->id)
