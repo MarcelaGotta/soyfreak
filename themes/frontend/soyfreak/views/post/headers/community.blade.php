@@ -27,6 +27,22 @@
                         </span>
                      @endif
                 </span>
+                @if (Auth::check())
+                <div class="notificacion-header">
+                    <?php $nStatus = $post->present()->canReceiveNotification()?>
+
+                    <a data-userid="{{Auth::user()->id}}" data-on="{{trans('notification.on-notifications')}}" data-status="{{$nStatus}}" data-off="{{trans('notification.off-notifications')}}" class="toggle-notification-receiver" data-type="post" data-type-id="{{$post->id}}" title="{{($nStatus) ? trans('notification.off-notifications') : trans('notification.on-notifications')}}" href="">
+
+                            <span>
+                                @if ($nStatus)
+                                    <i class="icon ion-ios-bell"></i>
+                                @else
+                                    <i class="icon ion-ios-bell-outline"></i>
+                                @endif
+                            </span>
+                    </a>
+                </div>
+                @endif
 
                 {{Theme::extend('post-header', ['post' => $post])}}
 
