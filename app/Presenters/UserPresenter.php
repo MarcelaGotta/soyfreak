@@ -294,21 +294,9 @@ class UserPresenter extends Presenter
     /**
      * Get user cover image
      */
-    public function getCover()
-    {
-        $default = \Theme::asset()->img("theme/images/profile-cover.jpg");
-        if (!$this->entity->cover) return $default;
-        return \Image::url($this->entity->cover);
-    }
-
     public function coverImage()
     {
-        return $this->getCover();
-    }
-
-    public function getOriginalCover()
-    {
-        if ($this->entity->original_cover) return \Image::url($this->entity->original_cover);
+        return \Image::url($this->entity->cover);
     }
 
     /**
