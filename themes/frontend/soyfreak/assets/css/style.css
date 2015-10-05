@@ -1116,7 +1116,6 @@ textarea{
     column-break-inside: avoid;
 }
 .post-media .post-header{
-    border-bottom: solid 1px #F1F1F1;
     padding: 5px 10px;
 }
 .post-media .post-header .header-object{
@@ -1155,8 +1154,8 @@ textarea{
 }
 .post-media .post-header .header-body .post-action-dropdown{
     position: absolute;
-    right: 0;
-    top: 5px;
+    right: -10px;
+    top: 0;
 
 }
 .post-media .post-header .header-body .post-action-dropdown > a:hover{color: black}
@@ -1218,7 +1217,7 @@ textarea{
     display: block;
 }
 .post-media .post-body .one-image a img{
-    max-width: 100%;
+    width: 100%;
 
 }
 
@@ -1319,11 +1318,13 @@ textarea{
     font-weight: bold;
 }
 .post-media .post-footer{
-    border-top: solid 1px #ECECEC;
-    border-bottom: solid 1px #ECECEC;
     padding: 3px 10px;
     position: relative;
     clear: both;
+}
+
+.post-media .post-footer .icon {
+    font-size: 20px;
 }
 .post-media .post-footer .nav-left li{
     display: inline-block;
@@ -1336,9 +1337,6 @@ textarea{
 .post-media .post-footer .nav-left li a:hover, .post-media .post-footer .nav-left li a:active, .post-media .post-footer .nav-left li a:focus{
     background: none;
     color: inherit;
-}
-.post-media .post-footer .nav-left li a:first-child{
-    padding-left: 0;
 }
 .post-media .post-footer .nav-right{
     position: absolute;
@@ -3096,7 +3094,6 @@ textarea{
     right: 0;
     width: 40px;
 }
-<<<<<<< HEAD
 .post-media .post-footer .nav-left .share-box {
     display: none;
     background-color: #00B4CC;
@@ -3130,8 +3127,6 @@ textarea{
     font-size: 25px;
     color: lightgrey;
 }
-=======
->>>>>>> parent of 8693ea4... Cambios Maqueta
 /**Footer style***/
 #footer{
     /**background: lightgrey;**/
