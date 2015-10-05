@@ -168,7 +168,22 @@
                 @endif
                 </span></a>
             </li>
-            
+            @if (Auth::check())
+            <li>
+                <?php $nStatus = $post->present()->canReceiveNotification()?>
+
+                <a data-userid="{{Auth::user()->id}}" data-on="{{trans('notification.on-notifications')}}" data-status="{{$nStatus}}" data-off="{{trans('notification.off-notifications')}}" class="toggle-notification-receiver" data-type="post" data-type-id="{{$post->id}}" title="{{($nStatus) ? trans('notification.off-notifications') : trans('notification.on-notifications')}}" href="">
+
+                        <span>
+                            @if ($nStatus)
+                                <i class="icon ion-ios-bell"></i>
+                            @else
+                                <i class="icon ion-ios-bell-outline"></i>
+                            @endif
+                        </span>
+                </a>
+            </li>
+            @endif
             <li class="share-box">
                 <i class="icon ion-arrow-up-b flecha-azul"></i>
                 <ul>
