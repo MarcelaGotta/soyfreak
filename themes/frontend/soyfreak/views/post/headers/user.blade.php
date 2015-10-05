@@ -43,7 +43,7 @@
                 {{Theme::extend('post-header', ['post' => $post])}}
 
                 <div class="post-action-dropdown dropdown">
-                    <a data-toggle="dropdown" data-hover="dropdown" class="dropdown-toggle" href=""><i class="icon ion-ios-gear"></i></a>
+                    <a data-toggle="dropdown" data-hover="dropdown" class="dropdown-toggle" href=""><i class="icon ion-chevron-down"></i></a>
 
                    @if (Auth::check())
 
@@ -65,7 +65,7 @@
 
                              {{Theme::extend('post-header-links', ['post' => $post])}}
 
-                             <!--{{Theme::section('post.social-share', ['post' => $post])}}-->
+                             {{Theme::section('post.social-share', ['post' => $post])}}
                          </ul>
                    @endif
                 </div>

@@ -150,12 +150,7 @@
     <div class="post-footer">
         <ul class="nav nav-left">
             @if($post->content_type != 'auto-post')
-            <li>
-                <a href="#" class="button-share">
-                    <i class="icon ion-android-share-alt"></i> 
-                    <span></span>
-                </a>
-            </li>
+            <li><a href="" data-is-login="{{Auth::check()}}" class="post-share-button" data-id="{{$post->id}}"><i class="icon ion-share"></i> <span></span></a></li>
             @endif
             <li>
                 <?php $hasLike = $post->hasLiked()?>
@@ -168,6 +163,7 @@
                 @endif
                 </span></a>
             </li>
+<<<<<<< HEAD
             
             <li class="share-box">
                 <i class="icon ion-arrow-up-b flecha-azul"></i>
@@ -181,6 +177,24 @@
                     {{Theme::section('post.social-share', ['post' => $post])}}
                 </ul>
             </li>
+=======
+            @if (Auth::check())
+            <li>
+                <?php $nStatus = $post->present()->canReceiveNotification()?>
+
+                <a data-userid="{{Auth::user()->id}}" data-on="{{trans('notification.on-notifications')}}" data-status="{{$nStatus}}" data-off="{{trans('notification.off-notifications')}}" class="toggle-notification-receiver" data-type="post" data-type-id="{{$post->id}}" title="{{($nStatus) ? trans('notification.off-notifications') : trans('notification.on-notifications')}}" href="">
+
+                        <span>
+                            @if ($nStatus)
+                                <i class="icon ion-ios-bell"></i>
+                            @else
+                                <i class="icon ion-ios-bell-outline"></i>
+                            @endif
+                        </span>
+                </a>
+            </li>
+            @endif
+>>>>>>> parent of 8693ea4... Cambios Maqueta
         </ul>
 
         <ul class="nav nav-right pull-right">

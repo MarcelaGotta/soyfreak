@@ -2230,10 +2230,6 @@ $(function() {
         }
         return false;
     });
-    $(document).on('click', '.button-share', function(e){
-        $(this).closest('.nav-left').find('.share-box').toggle('fast')
-        e.preventDefault();
-    });
 
     /**
      * Blocking of user through different location
