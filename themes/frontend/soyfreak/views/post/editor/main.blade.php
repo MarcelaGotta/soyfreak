@@ -158,6 +158,7 @@
                               <a title="{{$details['title']}}" data-target="#post-textarea" style="display: inline-block;margin: 5px" href="" data-code="{{$code}}" class="each-emoticon-selector"><img src="{{$details['image']}}"/> </a>
                         @endforeach
                     </div>
+                    </a>
                     </li>
                 @endif
 
